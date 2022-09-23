@@ -34,6 +34,8 @@ class ServerlessAWSFunctionURLCustomDomainPlugin {
     config['lambdaFunctionUrl'] = functionURLResourceName
 
     const resources = this.prepareResources(config);
+    
+    console.log("combinedResouces", combinedResouces);
 
     const combinedResouces = _.merge(baseResources, resources);
 
